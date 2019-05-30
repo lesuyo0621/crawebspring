@@ -1,0 +1,42 @@
+package kr.inhatc.craweb.controller;
+
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class CController {
+	
+	//@Autowired
+	//private SqlSession sqlSeesion;
+	
+//	@RequestMapping("/")
+//	public String home(Model model) {
+//		return "index";
+//	}
+	
+	@RequestMapping("/index")
+	public String index(Model model) {
+		return "index";
+	}
+	
+	@RequestMapping("/show")
+	public String charts(Model model) {
+		return "show";
+	}
+	
+	@RequestMapping("/single-blog")
+	public String singleblog(Model model){
+		return "single-blog";
+	}
+	
+	@RequestMapping("/logincheck")
+	public String logincheck(Model model) {
+		return "logincheck";
+	}
+	
+
+	
+}
