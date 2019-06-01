@@ -1,5 +1,9 @@
 package kr.inhatc.craweb.dao;
 
-public interface Dao {
+import java.util.ArrayList;
 
+import kr.inhatc.craweb.dto.Dto;
+
+public interface Dao {
+	public ArrayList<Dto> list();
 }

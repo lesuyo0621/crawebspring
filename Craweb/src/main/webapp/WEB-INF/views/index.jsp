@@ -49,7 +49,7 @@
                      <i class="fa fa-times"></i>
                   </button>
                   <!-- Form -->
-                  <form action="logincheck" method="post">
+                  <form action="index" method="post">
                      <input type="search" name="top-search-bar" class="form-control"
                         placeholder="Type keywords and hit enter...">
                      <button type="submit">Search</button>
@@ -78,15 +78,15 @@
    <!-- Header Area Start -->
    <header class="header-area">
       <!-- Main Header Start -->
-      <div class="main-header-area">
+      <div style="border-bottom:0.5px groove; class="main-header-area">
          <div class="classy-nav-container breakpoint-off">
             <div class="container">
                <!-- Classy Menu -->
                <nav class="classy-navbar justify-content-between" id="razoNav">
 
                   <!-- Logo -->
-                  <a class="nav-brand" href="index.html"><img
-                     src="${pageContext.request.contextPath}/resources/img/core-img/logo5.png"
+                  <a class="nav-brand" href="index"><img
+                     src="${pageContext.request.contextPath}/resources/img/core-img/logo.png"
                      alt=""></a>
 
                   <!-- Navbar Toggler -->
@@ -106,17 +106,19 @@
                      <!-- Nav Start -->
                      <div class="classynav">
                         <ul id="nav">
-
-                           <li><a href="./events.html">Events</a></li>
-                           <li><a href="./blog.html">Blog</a></li>
-                           <li><div class="wrap">
+                           <li><a href="./logincheck">Events</a></li>
+                           <li><a href="./blog">Blog</a></li>
+                           <li>
+                              <div class="wrap">
                                  <div class="search">
                                     <input type="text" class="searchTerm" placeholder="검색">
                                     <button type="submit" class="searchButton">
                                        <i class="fa fa-search"></i>
                                     </button>
                                  </div>
-                              </div></li>
+                              </div>
+                           </li>
+                           
                         </ul>
 
                         <!-- Share Icon -->
@@ -142,7 +144,7 @@
    <!-- Latest News Area Start -->
    <section
       class="razo-latest-news-area section-padding-80 bg-overlay bg-img jarallax"
-      style="background-image: url(${pageContext.request.contextPath}/resources/img/bg-img/32.jpg);">
+      style="background-color:white">
       <div class="container">
          <div class="row align-items-end">
             <!-- Section Heading -->
@@ -166,6 +168,7 @@
          <!-- Single Latest News Area -->
          <div class="razo-single-latest-news-area bg-overlay bg-img"
             style="background-image: url(${pageContext.request.contextPath}/resources/img/bg-img/22.jpg);">
+            <div class="owl-layer"></div>
             <!-- Post Content -->
             <div class="post-content">
                <a href="#" class="post-title">The light and music exposition
@@ -189,6 +192,7 @@
          <!-- Single Latest News Area -->
          <div class="razo-single-latest-news-area bg-overlay˛r bg-img"
             style="background-image: url(${pageContext.request.contextPath}/resources/img/bg-img/23.jpg);">
+            <div class="owl-layer"></div>
             <!-- Post Content -->
             <div class="post-content">
                <a href="#" class="post-title">The light and music exposition
@@ -208,10 +212,13 @@
                   class="fa fa-angle-double-right" aria-hidden="true"></i></a>
             </div>
          </div>
+         
+         
 
          <!-- Single Latest News Area -->
          <div class="razo-single-latest-news-area bg-overlay bg-img"
             style="background-image: url(${pageContext.request.contextPath}/resources/img/bg-img/24.jpg);">
+            <div class="owl-layer"></div>
             <!-- Post Content -->
             <div class="post-content">
                <a href="#" class="post-title">The light and music exposition
@@ -236,10 +243,75 @@
    </section>
    <!-- Latest News Area End -->
 
+   <!-- twl2-test-start -->
+   <!-- Latest News Area Start -->
+   <%-- <section
+      class="razo-latest-news-area section-padding-80 bg-overlay bg-img jarallax"
+      style="background-color:white">
+      <div class="container">
+         <div class="row align-items-end">
+            <!-- Section Heading -->
+            <div class="col-sm-6">
+               <div class="section-heading white">
+                  <h2>Latest News</h2>
+               </div>
+            </div>
+            <!-- Show All Button -->
+            <div class="col-sm-6">
+               <div class="show-all-button mb-50 text-right">
+                  <a href="#" class="btn show-all-btn">Show All Blog</a>
+               </div>
+            </div>
+         </div>
+      </div>
 
+      <!-- Razo Latest News Slide -->
+      <div class="razo-latest-news-slide-t twl-carousel">
 
-   <!-- Latest Podcast Area Start -->
+         <!-- Single Latest News Area -->
+         <div class="razo-single-latest-news-area bg-overlay bg-img"
+            style="background-color: url(${pageContext.request.contextPath}/resources/img/bg-img/22.jpg);">
+            <!-- Post Content -->
+            <div class="post-content">
+               <a href="#" class="post-title">The light and music exposition
+                  hits los angeles</a>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.</p>
+            </div>
+            <!-- Post Date -->
+            <div class="post-date">
+               <h2>24</h2>
+               <p>March</p>
+            </div>
+            <!-- Read More -->
+            <div class="read-more-btn">
+               <a href="#" class="btn">Read More <i
+                  class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+            </div>
+         </div>
+      </div>
+   </section> --%>
+   <!-- twl2-test end -->
+
+   <!-- Naver Podcast Area Start -->
    <section class="razo-latest-podcast-area section-padding-80">
+   <div class="container">
+         <div class="row align-items-end">
+            <!-- Section Heading -->
+            <div class="col-sm-6">
+               <div class="section-heading white">
+                  <h2>Naver</h2>
+               </div>
+            </div>
+            <!-- Show All Button -->
+            <div class="col-sm-6">
+               <div class="show-all-button mb-50 text-right">
+                  <a href="#" class="btn show-all-btn">더보기</a>
+               </div>
+            </div>
+         </div>
+      </div>
       <div class="container">
          <div class="row">
             <div class="col-12">
@@ -567,7 +639,6 @@
    <!-- All JS Files -->
 
    <!-- jQuery -->
-
    <script src="<c:url value = "/resources/js/jquery.min.js"/>"></script>
    <!-- Popper -->
    <script src="<c:url value = "/resources/js/popper.min.js"/>"></script>

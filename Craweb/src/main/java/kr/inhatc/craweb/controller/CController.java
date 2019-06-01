@@ -6,11 +6,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
+import kr.inhatc.craweb.dao.Dao;
+
 @Controller
 public class CController {
 	
-	//@Autowired
-	//private SqlSession sqlSeesion;
+	@Autowired
+	private SqlSession sqlSeesion;
 	
 //	@RequestMapping("/")
 //	public String home(Model model) {
@@ -27,13 +30,20 @@ public class CController {
 		return "show";
 	}
 	
-	@RequestMapping("/single-blog")
+	@RequestMapping("/blog")
 	public String singleblog(Model model){
 		return "single-blog";
 	}
 	
+	@RequestMapping("/events")
+	public String events(Model model) {
+		return "show";
+	}
+	
 	@RequestMapping("/logincheck")
 	public String logincheck(Model model) {
+		Dao dao = sqlSeesion.getMapper(Dao.class);
+		model.addAttribute("list", dao.list());
 		return "logincheck";
 	}
 	

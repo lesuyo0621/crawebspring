@@ -13,7 +13,7 @@
     <title>Razo - Radio HTML Template | Blog Details</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./img/core-img/favicon.ico">
+    <link rel="icon" href="${pageContext.request.contextPath}/resources/img/core-img/favicon.ico">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -42,7 +42,7 @@
                         <!-- Close Button -->
                         <button type="button" class="btn close-btn" data-dismiss="modal"><i class="fa fa-times"></i></button>
                         <!-- Form -->
-                        <form action="index.html" method="post">
+                        <form action="index" method="post">
                             <input type="search" name="top-search-bar" class="form-control" placeholder="Type keywords and hit enter...">
                             <button type="submit">Search</button>
                         </form>
@@ -76,7 +76,7 @@
                     <nav class="classy-navbar justify-content-between" id="razoNav">
 
                         <!-- Logo -->
-                        <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
+                        <a class="nav-brand" href="index"><img src="${pageContext.request.contextPath}/resources/img/core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -93,10 +93,10 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul id="nav">
-                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./index">Home</a></li>
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="./index.html">- Home</a></li>
+                                            <li><a href="./index">- Home</a></li>
                                             <li><a href="./charts.html">- Charts</a></li>
                                             <li><a href="./single-charts.html">- Charts Details</a></li>
                                             <li><a href="./podcast.html">- Podcast</a></li>
@@ -121,7 +121,7 @@
                                     <li><a href="#">Mega</a>
                                         <div class="megamenu">
                                             <ul class="single-mega cn-col-4">
-                                                <li><a href="./index.html">- Home</a></li>
+                                                <li><a href="./index">- Home</a></li>
                                                 <li><a href="./charts.html">- Charts</a></li>
                                                 <li><a href="./single-charts.html">- Charts Details</a></li>
                                                 <li><a href="./podcast.html">- Podcast</a></li>
@@ -132,7 +132,7 @@
                                                 <li><a href="./events.html">- Event</a></li>
                                                 <li><a href="./blog.html">- Blog</a></li>
                                                 <li><a href="./single-blog.html">- Blog Details</a></li>
-                                                <li><a href="./index.html">- Home</a></li>
+                                                <li><a href="./index">- Home</a></li>
                                             </ul>
                                             <ul class="single-mega cn-col-4">
                                                 <li><a href="./charts.html">- Charts</a></li>
@@ -146,7 +146,7 @@
                                                 <li><a href="./events.html">- Event</a></li>
                                                 <li><a href="./blog.html">- Blog</a></li>
                                                 <li><a href="./single-blog.html">- Blog Details</a></li>
-                                                <li><a href="./index.html">- Home</a></li>
+                                                <li><a href="./index">- Home</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -257,7 +257,7 @@
                                     <div class="comment-content d-flex">
                                         <!-- Comment Author -->
                                         <div class="comment-author">
-                                            <img src="img/bg-img/15.jpg" alt="author">
+                                            <img src="${pageContext.request.contextPath}/resources/img/bg-img/15.jpg" alt="author">
                                         </div>
                                         <!-- Comment Meta -->
                                         <div class="comment-meta">
@@ -274,7 +274,7 @@
                                             <div class="comment-content d-flex">
                                                 <!-- Comment Author -->
                                                 <div class="comment-author">
-                                                    <img src="img/bg-img/16.jpg" alt="author">
+                                                    <img src="${pageContext.request.contextPath}/resources/img/bg-img/16.jpg" alt="author">
                                                 </div>
                                                 <!-- Comment Meta -->
                                                 <div class="comment-meta">
@@ -294,7 +294,7 @@
                                     <div class="comment-content d-flex">
                                         <!-- Comment Author -->
                                         <div class="comment-author">
-                                            <img src="img/bg-img/17.jpg" alt="author">
+                                            <img src="${pageContext.request.contextPath}/resources/img/bg-img/17.jpg" alt="author">
                                         </div>
                                         <!-- Comment Meta -->
                                         <div class="comment-meta">
@@ -355,7 +355,7 @@
                     <div class="razo-blog-masonary-single-item">
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail">
-                            <a href="#"><img src="img/bg-img/44.jpg" alt=""></a>
+                            <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/44.jpg" alt=""></a>
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
@@ -372,7 +372,7 @@
                     <div class="razo-blog-masonary-single-item">
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail">
-                            <a href="#"><img src="img/bg-img/45.jpg" alt=""></a>
+                            <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/45.jpg" alt=""></a>
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
@@ -389,7 +389,7 @@
                     <div class="razo-blog-masonary-single-item">
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail">
-                            <a href="#"><img src="img/bg-img/46.jpg" alt=""></a>
+                            <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/46.jpg" alt=""></a>
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
@@ -416,7 +416,7 @@
                     <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                         <div class="single-footer-widget mb-80">
                             <!-- Footer Logo -->
-                            <a href="#" class="footer-logo"><img src="img/core-img/logo2.png" alt=""></a>
+                            <a href="#" class="footer-logo"><img src="${pageContext.request.contextPath}/resources/img/core-img/logo2.png" alt=""></a>
 
                             <p class="mb-30">Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -506,47 +506,47 @@
                             <div class="razo-instagram-area d-flex flex-wrap">
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/2.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/2.jpg" alt=""></a>
                                 </div>
 
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/3.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/3.jpg" alt=""></a>
                                 </div>
 
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/4.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/4.jpg" alt=""></a>
                                 </div>
 
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/5.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/5.jpg" alt=""></a>
                                 </div>
 
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/6.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/6.jpg" alt=""></a>
                                 </div>
 
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/7.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/7.jpg" alt=""></a>
                                 </div>
 
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/8.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/8.jpg" alt=""></a>
                                 </div>
 
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/9.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/9.jpg" alt=""></a>
                                 </div>
 
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/10.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/10.jpg" alt=""></a>
                                 </div>
                             </div>
                         </div>

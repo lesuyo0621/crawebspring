@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +17,7 @@
     <link rel="icon" href="./img/core-img/favicon.ico">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css_main/style.css">
 
 </head>
 
@@ -42,7 +43,7 @@
                         <!-- Close Button -->
                         <button type="button" class="btn close-btn" data-dismiss="modal"><i class="fa fa-times"></i></button>
                         <!-- Form -->
-                        <form action="index.html" method="post">
+                        <form action="index" method="post">
                             <input type="search" name="top-search-bar" class="form-control" placeholder="Type keywords and hit enter...">
                             <button type="submit">Search</button>
                         </form>
@@ -76,7 +77,7 @@
                     <nav class="classy-navbar justify-content-between" id="razoNav">
 
                         <!-- Logo -->
-                        <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
+                        <a class="nav-brand" href="index"><img src="${pageContext.request.contextPath}/resources/img/core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -93,10 +94,10 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul id="nav">
-                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./index">Home</a></li>
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="./index.html">- Home</a></li>
+                                            <li><a href="./index">- Home</a></li>
                                             <li><a href="./charts.html">- Charts</a></li>
                                             <li><a href="./single-charts.html">- Charts Details</a></li>
                                             <li><a href="./podcast.html">- Podcast</a></li>
@@ -121,7 +122,7 @@
                                     <li><a href="#">Mega</a>
                                         <div class="megamenu">
                                             <ul class="single-mega cn-col-4">
-                                                <li><a href="./index.html">- Home</a></li>
+                                                <li><a href="./index">- Home</a></li>
                                                 <li><a href="./charts.html">- Charts</a></li>
                                                 <li><a href="./single-charts.html">- Charts Details</a></li>
                                                 <li><a href="./podcast.html">- Podcast</a></li>
@@ -132,7 +133,7 @@
                                                 <li><a href="./events.html">- Event</a></li>
                                                 <li><a href="./blog.html">- Blog</a></li>
                                                 <li><a href="./single-blog.html">- Blog Details</a></li>
-                                                <li><a href="./index.html">- Home</a></li>
+                                                <li><a href="./index">- Home</a></li>
                                             </ul>
                                             <ul class="single-mega cn-col-4">
                                                 <li><a href="./charts.html">- Charts</a></li>
@@ -146,7 +147,7 @@
                                                 <li><a href="./events.html">- Event</a></li>
                                                 <li><a href="./blog.html">- Blog</a></li>
                                                 <li><a href="./single-blog.html">- Blog Details</a></li>
-                                                <li><a href="./index.html">- Home</a></li>
+                                                <li><a href="./index">- Home</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -239,7 +240,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/55.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/55.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>01:00am - 02:30am</span>
@@ -252,7 +253,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/56.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/56.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>03:00am - 05:30am</span>
@@ -265,7 +266,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/57.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/57.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>06:00am - 07:30am</span>
@@ -278,7 +279,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/58.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/58.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>09:00am - 11:30am</span>
@@ -291,7 +292,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/59.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/59.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>12:00pm - 13:30pm</span>
@@ -304,7 +305,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/60.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/60.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>15:00am - 17:00pm</span>
@@ -317,7 +318,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/61.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/61.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>18:00pm - 19:30pm</span>
@@ -330,7 +331,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/62.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/62.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>20:00pm - 22:00pm</span>
@@ -343,7 +344,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/63.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/63.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>23:00pm - 01:00am</span>
@@ -361,7 +362,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/55.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/55.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>01:00am - 02:30am</span>
@@ -374,7 +375,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/56.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/56.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>03:00am - 05:30am</span>
@@ -387,7 +388,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/57.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/57.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>06:00am - 07:30am</span>
@@ -400,7 +401,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/58.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/58.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>09:00am - 11:30am</span>
@@ -413,7 +414,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/59.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/59.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>12:00pm - 13:30pm</span>
@@ -426,7 +427,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/60.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/60.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>15:00am - 17:00pm</span>
@@ -439,7 +440,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/61.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/61.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>18:00pm - 19:30pm</span>
@@ -452,7 +453,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/62.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/62.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>20:00pm - 22:00pm</span>
@@ -465,7 +466,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/63.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/63.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>23:00pm - 01:00am</span>
@@ -483,7 +484,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/55.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/55.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>01:00am - 02:30am</span>
@@ -496,7 +497,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/56.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/56.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>03:00am - 05:30am</span>
@@ -509,7 +510,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/57.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/57.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>06:00am - 07:30am</span>
@@ -522,7 +523,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/58.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/58.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>09:00am - 11:30am</span>
@@ -535,7 +536,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/59.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/59.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>12:00pm - 13:30pm</span>
@@ -548,7 +549,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/60.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/60.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>15:00am - 17:00pm</span>
@@ -561,7 +562,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/61.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/61.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>18:00pm - 19:30pm</span>
@@ -574,7 +575,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/62.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/62.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>20:00pm - 22:00pm</span>
@@ -587,7 +588,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/63.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/63.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>23:00pm - 01:00am</span>
@@ -605,7 +606,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/55.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/55.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>01:00am - 02:30am</span>
@@ -618,7 +619,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/56.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/56.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>03:00am - 05:30am</span>
@@ -631,7 +632,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/57.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/57.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>06:00am - 07:30am</span>
@@ -644,7 +645,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/58.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/58.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>09:00am - 11:30am</span>
@@ -657,7 +658,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/59.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/59.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>12:00pm - 13:30pm</span>
@@ -670,7 +671,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/60.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/60.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>15:00am - 17:00pm</span>
@@ -683,7 +684,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/61.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/61.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>18:00pm - 19:30pm</span>
@@ -696,7 +697,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/62.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/62.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>20:00pm - 22:00pm</span>
@@ -709,7 +710,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/63.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/63.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>23:00pm - 01:00am</span>
@@ -727,7 +728,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/55.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/55.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>01:00am - 02:30am</span>
@@ -740,7 +741,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/56.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/56.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>03:00am - 05:30am</span>
@@ -753,7 +754,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/57.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/57.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>06:00am - 07:30am</span>
@@ -766,7 +767,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/58.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/58.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>09:00am - 11:30am</span>
@@ -779,7 +780,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/59.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/59.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>12:00pm - 13:30pm</span>
@@ -792,7 +793,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/60.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/60.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>15:00am - 17:00pm</span>
@@ -805,7 +806,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/61.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/61.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>18:00pm - 19:30pm</span>
@@ -818,7 +819,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/62.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/62.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>20:00pm - 22:00pm</span>
@@ -831,7 +832,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/63.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/63.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>23:00pm - 01:00am</span>
@@ -849,7 +850,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/55.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/55.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>01:00am - 02:30am</span>
@@ -862,7 +863,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/56.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/56.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>03:00am - 05:30am</span>
@@ -875,7 +876,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/57.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/57.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>06:00am - 07:30am</span>
@@ -888,7 +889,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/58.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/58.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>09:00am - 11:30am</span>
@@ -901,7 +902,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/59.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/59.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>12:00pm - 13:30pm</span>
@@ -914,7 +915,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/60.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/60.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>15:00am - 17:00pm</span>
@@ -927,7 +928,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/61.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/61.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>18:00pm - 19:30pm</span>
@@ -940,7 +941,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/62.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/62.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>20:00pm - 22:00pm</span>
@@ -953,7 +954,7 @@
                                 <!-- Single Show Item -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="single-show-item mb-30">
-                                        <img src="img/bg-img/63.jpg" alt="">
+                                        <img src="${pageContext.request.contextPath}/resources/img/bg-img/63.jpg" alt="">
                                         <div class="overlay-content">
                                             <div class="text-center">
                                                 <span>23:00pm - 01:00am</span>
@@ -982,7 +983,7 @@
                     <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                         <div class="single-footer-widget mb-80">
                             <!-- Footer Logo -->
-                            <a href="#" class="footer-logo"><img src="img/core-img/logo2.png" alt=""></a>
+                            <a href="#" class="footer-logo"><img src="${pageContext.request.contextPath}/resources/img/core-img/logo2.png" alt=""></a>
 
                             <p class="mb-30">Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -1072,47 +1073,47 @@
                             <div class="razo-instagram-area d-flex flex-wrap">
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/2.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/2.jpg" alt=""></a>
                                 </div>
 
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/3.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/3.jpg" alt=""></a>
                                 </div>
 
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/4.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/4.jpg" alt=""></a>
                                 </div>
 
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/5.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/5.jpg" alt=""></a>
                                 </div>
 
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/6.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/6.jpg" alt=""></a>
                                 </div>
 
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/7.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/7.jpg" alt=""></a>
                                 </div>
 
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/8.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/8.jpg" alt=""></a>
                                 </div>
 
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/9.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/9.jpg" alt=""></a>
                                 </div>
 
                                 <!-- Single Instagram Feed -->
                                 <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/10.jpg" alt=""></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/resources/img/bg-img/10.jpg" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -1142,16 +1143,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- All JS Files -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Popper -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- All Plugins -->
-    <script src="js/razo.bundle.js"></script>
-    <!-- Active -->
-    <script src="js/default-assets/active.js"></script>
+	<!-- jQuery -->
+	<script src="<c:url value = "/resources/js/jquery.min.js"/>"></script>
+	<!-- Popper -->
+	<script src="<c:url value = "/resources/js/popper.min.js"/>"></script>
+	<!-- Bootstrap -->
+	<script src="<c:url value = "/resources/js/bootstrap.min.js"/>"></script>
+	<!-- All Plugins -->
+	<script src="<c:url value = "/resources/js/razo.bundle.js"/>"></script>
+	<!-- Active -->
+	<script src="<c:url value = "/resources/js/default-assets/active.js"/>"></script>
 
 </body>
 
