@@ -38,23 +38,24 @@
    <!-- /Preloader -->
 
    <!-- Top Search Area Start -->
-   <div class="top-search-area">
+   
+<!--    <div class="top-search-area">
       <div class="modal fade" id="searchModal" tabindex="-1" role="dialog"
          aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                <div class="modal-body">
-                  <!-- Close Button -->
+                  Close Button
                   <button type="button" class="btn close-btn" data-dismiss="modal">
                      <i class="fa fa-times"></i>
                   </button>
-                  <!-- Form -->
+                  Form
                   <form action="index" method="post">
                      <input type="search" name="top-search-bar" class="form-control"
                         placeholder="Type keywords and hit enter...">
                      <button type="submit">Search</button>
                   </form>
-                  <!-- Search Button -->
+                  Search Button
                   <div class="search-btn">
                      <i class="icon_search"></i>
                   </div>
@@ -62,8 +63,40 @@
             </div>
          </div>
       </div>
-   </div>
-   <!-- Top Search Area End -->
+   </div> -->
+
+	<div class="modal fade" id="loginmodal" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div id="formContent">
+
+					<button-modal type="button" class="btn close-btn"
+						data-dismiss="modal"> <i class="fa fa-times"></i> </button-modal>
+
+					<!-- Tabs Titles -->
+					<h2-modal class="active">Sign In</h2-modal>
+					<h2-modal class="inactive underlineHover">Sign Up</h2-modal>
+
+					<!-- Login Form -->
+					<form action="index" method="post">
+						<input type="textmodal" id="login" name="login" placeholder="login">
+						<input type="textmodal" id="password" name="login" placeholder="password">
+						<input type="submit" value="Log In">
+					</form>
+
+					<!-- Remind Passowrd -->
+					<div id="formFooter">
+						<a-modal class="underlineHover" href="#">Forgot
+						Password?</a-modal>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Top Search Area End -->
 
    <!-- Social Share Area Start -->
    <div class="razo-social-share-area">
@@ -128,7 +161,7 @@
 
                         <!-- Search Icon -->
                         <div class="search-icon" data-toggle="modal"
-                           data-target="#searchModal">
+                           data-target="#loginmodal">
                            <i class="icon_search"></i>
                         </div>
                      </div>
