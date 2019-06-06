@@ -15,14 +15,9 @@ public class CController {
 	@Autowired
 	private SqlSession sqlSeesion;
 	
-//	@RequestMapping("/")
-//	public String home(Model model) {
-//		return "index";
-//	}
-	
 	@RequestMapping("/index")
 	public String index(Model model) {
-		return "index";
+		return"index";
 	}
 	
 	@RequestMapping("/show")
@@ -45,6 +40,11 @@ public class CController {
 		Dao dao = sqlSeesion.getMapper(Dao.class);
 		model.addAttribute("list", dao.list());
 		return "logincheck";
+	}
+	
+	@RequestMapping("/datacheck")
+	public String datacheck(Model model) {
+		return "datacheck";
 	}
 	
 
